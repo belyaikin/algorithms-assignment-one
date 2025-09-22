@@ -3,8 +3,7 @@ package org.example;
 import java.util.Arrays;
 
 public class ClosestPair {
-
-    static class Point {
+    private static class Point {
         int x, y;
 
         Point(int x, int y) {

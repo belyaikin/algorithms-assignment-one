@@ -2,13 +2,13 @@ package org.example;
 import java.util.Arrays;
 
 public class MergeSort {
-
     private static final int INSERTION_SORT_THRESHOLD = 10;
 
     public static void mergeSort(int[] arr) {
         int[] buffer = new int[arr.length];
         mergeSort(arr, buffer, 0, arr.length - 1);
     }
+
     private static void mergeSort(int[] arr, int[] buffer, int left, int right) {
         if (right - left <= INSERTION_SORT_THRESHOLD) {
             insertionSort(arr, left, right);
